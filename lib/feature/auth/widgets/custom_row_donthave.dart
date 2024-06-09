@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
-import 'package:technomasr_tasks/views/auth_views/register_view.dart';
+import 'package:technomasr_tasks/feature/auth/views/register_view.dart';
 
 class CustomRowDontHave extends StatelessWidget {
   const CustomRowDontHave({super.key, required this.title1, required this.title2, this.ontap});

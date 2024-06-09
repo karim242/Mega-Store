@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
-import 'package:technomasr_tasks/views/auth_views/forget_pasw_view.dart';
-import 'package:technomasr_tasks/views/auth_views/widgets/custom_botton.dart';
-import 'package:technomasr_tasks/views/auth_views/widgets/custom_btn_gog_fec.dart';
-import 'package:technomasr_tasks/views/auth_views/widgets/custom_line_and_or.dart';
-import 'package:technomasr_tasks/views/auth_views/widgets/custom_mega.dart';
-import 'package:technomasr_tasks/views/auth_views/widgets/custom_row_donthave.dart';
-import 'package:technomasr_tasks/views/auth_views/widgets/custom_text_field.dart';
+import 'package:technomasr_tasks/feature/auth/views/forget_pasw_view.dart';
+import 'package:technomasr_tasks/feature/auth/widgets/custom_botton.dart';
+import 'package:technomasr_tasks/feature/auth/widgets/custom_btn_gog_fec.dart';
+import 'package:technomasr_tasks/feature/auth/widgets/custom_line_and_or.dart';
+import 'package:technomasr_tasks/feature/auth/widgets/custom_mega.dart';
+import 'package:technomasr_tasks/feature/auth/widgets/custom_row_donthave.dart';
+import 'package:technomasr_tasks/feature/auth/widgets/custom_text_field.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});

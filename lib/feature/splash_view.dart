@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
-import 'package:technomasr_tasks/views/auth_views/login_view.dart';
+import 'package:technomasr_tasks/feature/auth/views/login_view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

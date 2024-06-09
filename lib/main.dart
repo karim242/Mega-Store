@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:technomasr_tasks/views/splash_view.dart';
+import 'package:technomasr_tasks/feature/home/view/root_view.dart';
+import 'package:technomasr_tasks/feature/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +15,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: 'Poppins',
         ),
-        home: const SplashView());
+        home: const RootView());
   }
 }

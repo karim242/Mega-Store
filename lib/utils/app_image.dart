@@ -29,6 +29,11 @@ class Assets {
   /// assets/images/grayStar.svg
   static const String imagesGrayStar = "assets/images/grayStar.svg";
     static const String imagesShow = "assets/images/Show.svg";
+    static const String imagesHome = "assets/images/Home.svg";
+    static const String imagesOffer = "assets/images/Offer.svg";
+    static const String imagesVector = "assets/images/Vector.svg";
+    static const String imagesCart = "assets/images/Cart.svg";
+
 
 
   /// Assets for imagesGrffinPhoto
