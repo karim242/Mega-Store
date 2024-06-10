@@ -11,12 +11,10 @@ class Assets {
 
   /// Assets for imagesFsImage1
   /// assets/images/fsImage1.svg
-  static const String imagesFsImage1 = "assets/images/fsImage1.svg";
-
+  static const String imagesFsImage1 = "assets/images/flsImage1.png";
   /// Assets for imagesFsImage2
-  /// assets/images/fsImage2.svg
-  static const String imagesFsImage2 = "assets/images/fsImage2.svg";
-
+  /// assets/images/flsImage2.png
+  static const String imagesFsImage2 = "assets/images/flsImage2.png";
   /// Assets for imagesGoldenStar
   /// assets/images/goldenStar.svg
   static const String imagesGoldenStar = "assets/images/goldenStar.svg";
