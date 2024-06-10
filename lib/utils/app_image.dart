@@ -42,8 +42,8 @@ class Assets {
 
   /// Assets for imagesHeadPhoneImg
   /// assets/images/headPhoneImg.svg
-  static const String imagesHeadPhoneImg = "assets/images/headPhoneImg.svg";
-
+ static const String imagesFirst = "assets/images/first.png";
+  static const String imagesSecond = "assets/images/second.jpg";
   /// Assets for imagesJamesPhoto
   /// assets/images/jamesPhoto.svg
   static const String imagesJamesPhoto = "assets/images/jamesPhoto.svg";
