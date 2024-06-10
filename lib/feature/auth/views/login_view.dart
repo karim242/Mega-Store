@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
 import 'package:technomasr_tasks/feature/auth/views/forget_pasw_view.dart';
-import 'package:technomasr_tasks/feature/auth/widgets/custom_botton.dart';
+import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
 import 'package:technomasr_tasks/feature/auth/widgets/custom_btn_gog_fec.dart';
 import 'package:technomasr_tasks/feature/auth/widgets/custom_line_and_or.dart';
 import 'package:technomasr_tasks/feature/auth/widgets/custom_mega.dart';

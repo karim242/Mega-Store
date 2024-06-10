@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technomasr_tasks/feature/home/view/search_view.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
 class AppBarTextField extends StatelessWidget {
@@ -10,7 +11,12 @@ class AppBarTextField extends StatelessWidget {
       height: 41,
       width: 263,
       child: TextField(
+        onSubmitted: (value) {
+          Navigator.push(context, 
+          MaterialPageRoute(builder: (context) => const SearchView()));
+        },
         decoration: InputDecoration(
+          
           filled: true,
           prefixIcon: const Icon(Icons.search, color: Color(0xff50555C)),
           hintText: "Search Product",

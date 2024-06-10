@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:technomasr_tasks/feature/home/widgets/flashsale_product_item.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
-import 'package:technomasr_tasks/utils/widgets/custom_product_col.dart';
 
 class FlashSaleProductRow extends StatelessWidget {
   const FlashSaleProductRow({super.key});
@@ -15,15 +15,16 @@ class FlashSaleProductRow extends StatelessWidget {
       shrinkWrap: true,
       scrollDirection: Axis.horizontal,
      children: [
-      CustomProductCol(image: productImages[0]),
+      
+      FlashProductItem(image: productImages[0]),
       const SizedBox(
         width: 12,
       ),
-      CustomProductCol(image: productImages[1]),
+      FlashProductItem(image: productImages[1]),
       const SizedBox(
         width: 12,
       ),
-      CustomProductCol(image: productImages[0]),
+      FlashProductItem(image: productImages[0]),
     ],);
   }
 }

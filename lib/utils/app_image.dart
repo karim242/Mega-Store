@@ -12,9 +12,12 @@ class Assets {
   /// Assets for imagesFsImage1
   /// assets/images/fsImage1.svg
   static const String imagesFsImage1 = "assets/images/flsImage1.png";
+    static const String imagesFsImage3 = "assets/images/flsImage1.png";
+
   /// Assets for imagesFsImage2
   /// assets/images/flsImage2.png
   static const String imagesFsImage2 = "assets/images/flsImage2.png";
+    static const String imagesyouMayProductImg = "assets/images/youMayProductImg.png";
   /// Assets for imagesGoldenStar
   /// assets/images/goldenStar.svg
   static const String imagesGoldenStar = "assets/images/goldenStar.svg";
@@ -41,11 +44,18 @@ class Assets {
   /// Assets for imagesHeadPhoneImg
   /// assets/images/headPhoneImg.svg
  static const String imagesFirst = "assets/images/first.png";
+
+  static const String imagesimage104 = "assets/images/image104.png";
   static const String imagesSecond = "assets/images/second.jpg";
   /// Assets for imagesJamesPhoto
   /// assets/images/jamesPhoto.svg
-  static const String imagesJamesPhoto = "assets/images/jamesPhoto.svg";
-
+    static const String imagesProfilePicture = "assets/images/ProfilePicture.png";
+        static const String imageslauraProfile = "assets/images/lauraProfile.png";
+    static const String imagesgriffinRodProfile = "assets/images/griffinRodProfile.png";
+    static const String imagesBridgeProfile = "assets/images/BridgeProfile.png";
+  static const String imagesTrash= "assets/images/Trash.svg";
+    static const String imagesheartIcon= "assets/images/heartIcon.svg";
+        static const String imagesredHeart= "assets/images/redHeart.svg";
   /// Assets for imagesJhonsonPhoto
   /// assets/images/jhonsonPhoto.svg
   static const String imagesJhonsonPhoto = "assets/images/jhonsonPhoto.svg";
@@ -66,6 +76,8 @@ class Assets {
   /// assets/images/MessageIcon.svg
   static const String imagesMessageIcon = "assets/images/MessageIcon.svg";
 
+    static const String imagesPlusIcon= "assets/images/Plus.svg";
+    static const String imagesMinusIcon= "assets/images/Minus.svg";
   /// Assets for imagesNoResultFoundImg
   /// assets/images/noResultFoundImg.svg
   static const String imagesNoResultFoundImg = "assets/images/noResultFoundImg.svg";
@@ -76,14 +88,10 @@ class Assets {
 
   /// Assets for imagesProductNameImg
   /// assets/images/productNameImg.svg
-  static const String imagesProductNameImg = "assets/images/productNameImg.svg";
-
+  static const String imagesproductDetailImage = "assets/images/productDetailImage.png";
   /// Assets for imagesProfileIcon
   /// assets/images/profileIcon.svg
   static const String imagesProfileIcon = "assets/images/profileIcon.svg";
 
-  /// Assets for imagesYmlimage3
-  /// assets/images/ymlimage3.svg
-  static const String imagesYmlimage3 = "assets/images/ymlimage3.svg";
 }
 

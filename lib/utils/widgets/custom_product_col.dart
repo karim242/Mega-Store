@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
 class CustomProductCol extends StatelessWidget {
-  const CustomProductCol({super.key, required this.image});
+  const CustomProductCol({super.key, required this.image,});
 final String image;
   @override
   Widget build(BuildContext context) {

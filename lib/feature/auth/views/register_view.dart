@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
-import 'package:technomasr_tasks/feature/auth/widgets/custom_botton.dart';
+import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
 import 'package:technomasr_tasks/feature/auth/widgets/custom_mega.dart';
 import 'package:technomasr_tasks/feature/auth/widgets/custom_row_donthave.dart';
 import 'package:technomasr_tasks/feature/auth/widgets/custom_text_field.dart';

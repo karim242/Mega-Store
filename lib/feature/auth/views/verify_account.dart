@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/feature/auth/views/reset_pasw_view.dart';
-import 'package:technomasr_tasks/feature/auth/widgets/custom_botton.dart';
+import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
 import 'package:technomasr_tasks/feature/auth/widgets/custom_mega.dart';
 
 class VerifyAccount extends StatelessWidget {

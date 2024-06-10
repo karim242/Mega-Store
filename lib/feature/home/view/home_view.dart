@@ -5,6 +5,7 @@ import 'package:technomasr_tasks/feature/home/widgets/flashsale_product_row.dart
 import 'package:technomasr_tasks/feature/home/widgets/home_appbar_row.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
+import 'package:technomasr_tasks/utils/widgets/custom_gridview.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -56,14 +57,15 @@ class HomeView extends StatelessWidget {
                         ],
                       ),
                     ),
-                 const   SizedBox(height: 230, child: const FlashSaleProductRow()),
+                 const   SizedBox(height: 230, child:  FlashSaleProductRow()),
                  const SizedBox(
                       height: 28,
                     ),
                     Text("You May Like ",style: AppFonts.textStyle14().copyWith(
                       color: const Color(0xff50555C),
-                      
-                    ),)
+
+                    ),),
+                    CusromGridView(),
                   ]
             ),
             ),
