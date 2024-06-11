@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
-PreferredSizeWidget customAppBar({required String title,Color? color}) {
+PreferredSizeWidget customAppBar( BuildContext context,{required String title,Color? color}) {
 
     return AppBar(
       shape: const RoundedRectangleBorder(
@@ -10,11 +10,17 @@ PreferredSizeWidget customAppBar({required String title,Color? color}) {
        ),
      
       ),
-      leading: const Icon(
-        Icons.arrow_back_ios,
-        size: 16,
-        color: Color(
-          0xff9098B1,
+      leading: InkWell(
+        onTap: (){
+         
+          Navigator.pop(context);
+        },
+        child: const Icon(
+          Icons.arrow_back_ios,
+          size: 16,
+          color: Color(
+            0xff9098B1,
+          ),
         ),
       ),
       title: Text(

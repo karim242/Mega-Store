@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:technomasr_tasks/feature/home/widgets/review_text_field.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 import 'package:technomasr_tasks/utils/widgets/custom_appbar.dart';
@@ -12,9 +11,9 @@ class WriteReviewView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar(title: 'Write Review'),
+      appBar: customAppBar(context, title: 'Write Review'),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -71,7 +70,7 @@ class WriteReviewView extends StatelessWidget {
                 title: 'Send Review',
                 backgroundColor: const Color(0xffBA6400),
               ),
-               const SizedBox(
+              const SizedBox(
                 height: 10,
               ),
             ],

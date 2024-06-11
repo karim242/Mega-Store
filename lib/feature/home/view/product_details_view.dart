@@ -16,16 +16,15 @@ class ProductDetails extends StatelessWidget {
   const ProductDetails({
     super.key,
   });
-
- 
+ final ProfileModel profileModel = const ProfileModel(
+      image: Assets.imagesProfilePicture,
+      title: "James Lawson",
+    );
   @override
   Widget build(BuildContext context) {
-     final ProfileModel profileModel = ProfileModel(
-    image: Assets.imagesProfilePicture,
-    title: "James Lawson",
-  );
+   
     return Scaffold(
-      appBar: customAppBar(title: 'Product Name ....'),
+      appBar: customAppBar(context, title: 'Product Name ....'),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: SingleChildScrollView(
@@ -66,7 +65,9 @@ class ProductDetails extends StatelessWidget {
               const SizedBox(height: 13),
               const ReviewProductRow(),
               const SizedBox(height: 16),
-               CustomReviewListTileAndDetail(profile: profileModel,),
+              CustomReviewListTileAndDetail(
+                profile: profileModel,
+              ),
               const SizedBox(height: 16),
               Text('You Might Also Like',
                   style: AppFonts.textStyle14().copyWith(

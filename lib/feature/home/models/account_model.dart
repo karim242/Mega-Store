@@ -1,6 +1,7 @@
 class AccountModel{
 final String title, icon;
- const AccountModel( {required this.title, required this.icon,});
+final void Function()? ontap;
+ const AccountModel( {required this.ontap,required this.title, required this.icon,});
 
 
 

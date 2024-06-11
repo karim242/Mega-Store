@@ -13,16 +13,19 @@ class CustomAccountListTile extends StatelessWidget {
   final Color? colorIcon;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: EdgeInsets.zero,
-      leading: SvgPicture.asset(
-        accounts.icon,
-        fit: BoxFit.fill,
-        color: colorIcon,
-      ),
-      title: Text(
-        accounts.title,
-        style: AppFonts.textStyle12().copyWith(color: const Color(0xff223263)),
+    return InkWell(
+      onTap: accounts.ontap,
+      child: ListTile(
+        contentPadding: EdgeInsets.zero,
+        leading: SvgPicture.asset(
+          accounts.icon,
+          fit: BoxFit.fill,
+          color: colorIcon,
+        ),
+        title: Text(
+          accounts.title,
+          style: AppFonts.textStyle12().copyWith(color: const Color(0xff223263)),
+        ),
       ),
     );
   }

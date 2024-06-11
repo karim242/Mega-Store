@@ -10,7 +10,7 @@ class ReviewView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar(title: '5 Review'),
+      appBar: customAppBar(context,title: '5 Review'),
       body:  Padding(
         padding:const EdgeInsets.symmetric(horizontal: 16.0),
         child: SingleChildScrollView(

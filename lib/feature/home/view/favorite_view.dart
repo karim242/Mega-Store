@@ -8,7 +8,7 @@ class FavoriteView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: customAppBar(title: 'Favorite List '),
+        appBar: customAppBar(context,title: 'Favorite List '),
         body: const Padding(
           padding:  EdgeInsets.symmetric(horizontal: 16.0),
           child: SingleChildScrollView(

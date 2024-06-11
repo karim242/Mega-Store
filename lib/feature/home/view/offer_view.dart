@@ -8,7 +8,7 @@ class OfferView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar(title: 'Category  Name '),
+      appBar: customAppBar(context,title: 'Category  Name '),
       body:const Padding(
         padding:  EdgeInsets.symmetric(horizontal: 16.0),
         child:  SingleChildScrollView(child: CusromGridView()),

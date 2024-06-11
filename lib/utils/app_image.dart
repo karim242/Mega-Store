@@ -96,6 +96,8 @@ class Assets {
 
   static const String imagesPlusIcon = "assets/images/Plus.svg";
   static const String imagesMinusIcon = "assets/images/Minus.svg";
+  static const String imagesAlertIcon = "assets/images/AlertIcon.svg";
+
 
   /// Assets for imagesNoResultFoundImg
   /// assets/images/noResultFoundImg.svg

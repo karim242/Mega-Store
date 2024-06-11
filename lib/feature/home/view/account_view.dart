@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/feature/home/models/account_model.dart';
+import 'package:technomasr_tasks/feature/home/view/delet_account_view.dart';
 import 'package:technomasr_tasks/feature/home/view/profile_view.dart';
 import 'package:technomasr_tasks/feature/home/widgets/appbar_without_arrow.dart';
 import 'package:technomasr_tasks/feature/home/widgets/custom_account_list_title.dart';
@@ -19,44 +20,45 @@ class AccountView extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
-              InkWell(
-                onTap: () {
+              CustomAccountListTile(
+                  accounts: AccountModel(
+                      title: 'Profile', icon: Assets.imagesgUserIcon,
+                      ontap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const ProfileView()));
-                },
-                child: const CustomAccountListTile(
-                  accounts: AccountModel(
-                      title: 'Profile', icon: Assets.imagesgUserIcon),
-                ),
-              ),
-              InkWell(
-                  onTap: () {},
-                  child: const CustomAccountListTile(
+                          builder: (context) => const ProfileView()
+                          ));
+  })),
+                
+              
+                CustomAccountListTile(
                     accounts: AccountModel(
-                        title: 'My Orders ', icon: Assets.imagesgmyOrderIcon),
-                  )),
-              InkWell(
-                onTap: () {},
-                child: const CustomAccountListTile(
-                  accounts: AccountModel(
-                      title: 'Address', icon: Assets.imagesgLocationIcon),
+                        title: 'My Orders ',
+                         icon: Assets.imagesgmyOrderIcon,ontap: (){}
+                         ),
                 ),
+                  
+              CustomAccountListTile(
+                  accounts: AccountModel(
+                      title: 'Address', icon: Assets.imagesgLocationIcon,ontap: (){}),
+                
               ),
-              InkWell(
-                  onTap: () {},
-                  child: const CustomAccountListTile(
+               CustomAccountListTile(
                     accounts: AccountModel(
-                        title: 'Log out ', icon: Assets.imagesgLogoutIcon),
-                  )),
-              InkWell(
-                  onTap: () {},
-                  child: const CustomAccountListTile(
+                        title: 'Log out ', icon: Assets.imagesgLogoutIcon,ontap: (){}),
+              ),
+              CustomAccountListTile(
                     colorIcon: Colors.red,
                     accounts: AccountModel(
-                        title: 'Delete Account ', icon: Assets.imagesTrash),
-                  ))
+                        title: 'Delete Account ', icon: Assets.imagesTrash,ontap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const DeletAccountView()
+                              ));
+                        }),
+                  ),
             ]),
           ),
         ));
