@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technomasr_tasks/feature/home/view/success_view.dart';
 import 'package:technomasr_tasks/feature/home/widgets/custom_ship_to_item.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
@@ -55,8 +56,8 @@ class ShipToView extends StatelessWidget {
                CustomBotton(
                 title: 'Next',
                 onTap: (){
-                 // Navigator.push(context, 
-                //  MaterialPageRoute(builder: (context) => const ShipToView()));
+                 Navigator.push(context, 
+                 MaterialPageRoute(builder: (context) => const SuccessView()));
                 },
                 backgroundColor:const Color( 0xffBA6400),)
             ],

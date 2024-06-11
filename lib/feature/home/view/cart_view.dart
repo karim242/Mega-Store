@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/feature/home/view/ship_to_view.dart';
+import 'package:technomasr_tasks/feature/home/widgets/appbar_without_arrow.dart';
 import 'package:technomasr_tasks/feature/home/widgets/copon_row.dart';
 import 'package:technomasr_tasks/feature/home/widgets/custom_cart_item.dart';
 import 'package:technomasr_tasks/feature/home/widgets/total_price_box.dart';
@@ -21,21 +22,7 @@ class _CartViewState extends State<CartView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        shape: const RoundedRectangleBorder(
-          side: BorderSide(
-            width: 1.5,
-            color: Color(0xffEBF0FF),
-          ),
-        ),
-        title: Text(
-          'Your Cart ',
-          textAlign: TextAlign.left,
-          style: AppFonts.textStyle14()
-              .copyWith(fontSize: 16, color: const Color(0xff223263)),
-        ),
-      ),
+      appBar: customAppBarWithoutArrow(title:  'Your Cart '),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -91,4 +78,7 @@ class _CartViewState extends State<CartView> {
       ),
     );
   }
+
+ 
+
 }

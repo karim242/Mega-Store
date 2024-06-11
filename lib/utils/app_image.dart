@@ -1,6 +1,6 @@
 class Assets {
   Assets._();
-  
+
   /// Assets for imagesCloseIcon
   /// assets/images/closeIcon.svg
   static const String imagesCloseIcon = "assets/images/closeIcon.svg";
@@ -12,12 +12,14 @@ class Assets {
   /// Assets for imagesFsImage1
   /// assets/images/fsImage1.svg
   static const String imagesFsImage1 = "assets/images/flsImage1.png";
-    static const String imagesFsImage3 = "assets/images/flsImage1.png";
+  static const String imagesFsImage3 = "assets/images/flsImage1.png";
 
   /// Assets for imagesFsImage2
   /// assets/images/flsImage2.png
   static const String imagesFsImage2 = "assets/images/flsImage2.png";
-    static const String imagesyouMayProductImg = "assets/images/youMayProductImg.png";
+  static const String imagesyouMayProductImg =
+      "assets/images/youMayProductImg.png";
+
   /// Assets for imagesGoldenStar
   /// assets/images/goldenStar.svg
   static const String imagesGoldenStar = "assets/images/goldenStar.svg";
@@ -29,13 +31,11 @@ class Assets {
   /// Assets for imagesGrayStar
   /// assets/images/grayStar.svg
   static const String imagesGrayStar = "assets/images/grayStar.svg";
-    static const String imagesShow = "assets/images/Show.svg";
-    static const String imagesHome = "assets/images/Home.svg";
-    static const String imagesOffer = "assets/images/Offer.svg";
-    static const String imagesVector = "assets/images/Vector.svg";
-    static const String imagesCart = "assets/images/Cart.svg";
-
-
+  static const String imagesShow = "assets/images/Show.svg";
+  static const String imagesHome = "assets/images/Home.svg";
+  static const String imagesOffer = "assets/images/Offer.svg";
+  static const String imagesVector = "assets/images/Vector.svg";
+  static const String imagesCart = "assets/images/Cart.svg";
 
   /// Assets for imagesGrffinPhoto
   /// assets/images/grffinPhoto.svg
@@ -43,23 +43,39 @@ class Assets {
 
   /// Assets for imagesHeadPhoneImg
   /// assets/images/headPhoneImg.svg
- static const String imagesFirst = "assets/images/first.png";
+  static const String imagesFirst = "assets/images/first.png";
 
   static const String imagesimage104 = "assets/images/image104.png";
   static const String imagesSecond = "assets/images/second.jpg";
+
   /// Assets for imagesJamesPhoto
   /// assets/images/jamesPhoto.svg
-    static const String imagesProfilePicture = "assets/images/ProfilePicture.png";
-        static const String imageslauraProfile = "assets/images/lauraProfile.png";
-    static const String imagesgriffinRodProfile = "assets/images/griffinRodProfile.png";
-    static const String imagesBridgeProfile = "assets/images/BridgeProfile.png";
-  static const String imagesTrash= "assets/images/Trash.svg";
-    static const String imagesheartIcon= "assets/images/heartIcon.svg";
+  static const String imagesProfilePicture = "assets/images/ProfilePicture.png";
+  static const String imageslauraProfile = "assets/images/lauraProfile.png";
+  static const String imagesgriffinRodProfile ="assets/images/griffinRodProfile.png";
+  static const String imagesBridgeProfile = "assets/images/BridgeProfile.png";
+  static const String imagesTrash = "assets/images/Trash.svg";
+  static const String imagesheartIcon = "assets/images/heartIcon.svg";
 
-        static const String imagesredHeart= "assets/images/redHeart.svg";
-                static const String imagesgrayHeartIcon= "assets/images/grayHeart.svg";
+  static const String imagesredHeart = "assets/images/redHeart.svg";
+  static const String imagesgrayHeartIcon = "assets/images/grayHeart.svg";
+
+  static const String imagesgSuccessIcon = "assets/images/SuccessIcon.svg";
+
   /// Assets for imagesJhonsonPhoto
   /// assets/images/jhonsonPhoto.svg
+  ///
+  ///
+  ///
+  static const String imagesgUserIcon = "assets/images/userIcon.svg";
+
+  static const String imagesgRedTrashIcon = "assets/images/RedTrash.png";
+  static const String imagesgmyOrderIcon = "assets/images/myOrderIcon.svg";
+
+  static const String imagesgLocationIcon = "assets/images/LocationIcon.svg";
+
+  static const String imagesgLogoutIcon = "assets/images/Logout.svg";
+
   static const String imagesJhonsonPhoto = "assets/images/jhonsonPhoto.svg";
 
   /// Assets for imagesLauraPhoto
@@ -78,11 +94,13 @@ class Assets {
   /// assets/images/MessageIcon.svg
   static const String imagesMessageIcon = "assets/images/MessageIcon.svg";
 
-    static const String imagesPlusIcon= "assets/images/Plus.svg";
-    static const String imagesMinusIcon= "assets/images/Minus.svg";
+  static const String imagesPlusIcon = "assets/images/Plus.svg";
+  static const String imagesMinusIcon = "assets/images/Minus.svg";
+
   /// Assets for imagesNoResultFoundImg
   /// assets/images/noResultFoundImg.svg
-  static const String imagesNoResultFoundImg = "assets/images/noResultFoundImg.svg";
+  static const String imagesNoResultFoundImg =
+      "assets/images/noResultFoundImg.svg";
 
   /// Assets for imagesPhoneIcon
   /// assets/images/phoneIcon.svg
@@ -90,10 +108,22 @@ class Assets {
 
   /// Assets for imagesProductNameImg
   /// assets/images/productNameImg.svg
-  static const String imagesproductDetailImage = "assets/images/productDetailImage.png";
+  static const String imagesproductDetailImage =
+      "assets/images/productDetailImage.png";
+
   /// Assets for imagesProfileIcon
   /// assets/images/profileIcon.svg
   static const String imagesProfileIcon = "assets/images/profileIcon.svg";
 
-}
 
+
+  static const String imagesgPhoneIcon = "assets/images/Phone.svg";
+    static const String imagesgPasswordIcon = "assets/images/Password.svg";
+  static const String imagesgmyemailIcon = "assets/images/emailIcon.svg";
+
+
+  static const String imagesgGlobeIcon = "assets/images/Globe.png";
+
+
+
+}

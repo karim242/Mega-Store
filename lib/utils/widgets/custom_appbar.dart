@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
-PreferredSizeWidget customAppBar({required String title}) {
+PreferredSizeWidget customAppBar({required String title,Color? color}) {
 
     return AppBar(
       shape: const RoundedRectangleBorder(
@@ -21,7 +21,7 @@ PreferredSizeWidget customAppBar({required String title}) {
         title,
         textAlign: TextAlign.left,
         style: AppFonts.textStyle14()
-            .copyWith(fontSize: 16, color: const Color(0xff50555C)),
+            .copyWith(fontSize: 16, color: color ??const Color(0xff50555C)),
       ),
     );
   
