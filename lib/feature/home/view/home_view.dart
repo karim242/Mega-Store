@@ -65,7 +65,7 @@ class HomeView extends StatelessWidget {
                       color: const Color(0xff50555C),
 
                     ),),
-                    CusromGridView(),
+                    const CusromGridView(),
                   ]
             ),
             ),

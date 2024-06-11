@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:technomasr_tasks/feature/home/widgets/custom_increase_decrese_row.dart';
+import 'package:technomasr_tasks/feature/home/view/ship_to_view.dart';
+import 'package:technomasr_tasks/feature/home/widgets/copon_row.dart';
+import 'package:technomasr_tasks/feature/home/widgets/custom_cart_item.dart';
+import 'package:technomasr_tasks/feature/home/widgets/total_price_box.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
+import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
 
-class CartView extends StatelessWidget {
+class CartView extends StatefulWidget {
   const CartView({super.key});
+
+  @override
+  State<CartView> createState() => _CartViewState();
+}
+
+class _CartViewState extends State<CartView> {
+  bool ontap1 = false;
+  bool ontap2 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -29,76 +39,53 @@ class CartView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Container(
-            //width: 343,
-            height: 110,
-            padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(5),
-              border: Border.all(
-                color: const Color(0xffEBF0FF),
-                width: 1,
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 16,
               ),
-            ),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                AspectRatio(
-                    aspectRatio: 68 / 72,
-                    child: Image.asset(
-                      Assets.imagesFsImage1,
-                      fit: BoxFit.fill,
-                    )),
-                const SizedBox(
-                  width: 17,
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: 155,
-                          height: 36,
-                          child: Text('Nike Air Zoom Pegasus 36 Miamis',
-                              style: AppFonts.textStyle12()
-                                  .copyWith(color: const Color(0xff223263))),
-                        ),
-                        const SizedBox(
-                          width: 16,
-                        ),
-                        SvgPicture.asset(Assets.imagesredHeart),
-                        const SizedBox(
-                          width: 11,
-                        ),
-                        SvgPicture.asset(Assets.imagesTrash,color: const Color(0xff9098B1),),
-                    
-                      ],
-                    ),
-                    const SizedBox(
-                          height: 18,
-                        ),
-                    Row(
-                   crossAxisAlignment: CrossAxisAlignment.start,
-
-                  children: [
-                    Text('\$299,43',style: AppFonts.textStyle12().copyWith(
-                      color: const Color(0xff40bfff)),),
-                      const SizedBox(
-                          width: 70,
-                    
-                        ),
-                        const CustomIncreaseAndDecreaseRow()
-                  ],
-                )
-                  ],
-                ),
-
-                
-              ],
-            ),
+              CustomCartItem(
+                ontap: () {
+                  setState(() {
+                    ontap1 = !ontap1;
+                  });
+                },
+                heartIconString:
+                    ontap1 ? Assets.imagesredHeart : Assets.imagesgrayHeartIcon,
+                // gray: Color(0xff9098B1),
+              ),
+              const SizedBox(
+                height: 16,
+              ),
+              CustomCartItem(
+                ontap: () {
+                  setState(() {
+                    ontap2 = !ontap2;
+                  });
+                },
+                heartIconString:
+                    ontap2 ? Assets.imagesredHeart : Assets.imagesgrayHeartIcon,
+                // gray: Color(0xff9098B1),
+              ),
+              const SizedBox(
+                height: 32,
+              ),
+              const CuponRoW(),
+               const SizedBox(
+                height: 16,
+              ),
+              const TotalPriceBox(),
+               const SizedBox(
+                height: 16,
+              ),
+                CustomBotton(
+                title: ' Checkout',
+                onTap: (){
+                  Navigator.push(context, 
+                  MaterialPageRoute(builder: (context) => const ShipToView()));
+                },
+                backgroundColor:const Color( 0xffBA6400),)
+            ],
           ),
         ),
       ),

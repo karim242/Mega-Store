@@ -55,7 +55,9 @@ class Assets {
     static const String imagesBridgeProfile = "assets/images/BridgeProfile.png";
   static const String imagesTrash= "assets/images/Trash.svg";
     static const String imagesheartIcon= "assets/images/heartIcon.svg";
+
         static const String imagesredHeart= "assets/images/redHeart.svg";
+                static const String imagesgrayHeartIcon= "assets/images/grayHeart.svg";
   /// Assets for imagesJhonsonPhoto
   /// assets/images/jhonsonPhoto.svg
   static const String imagesJhonsonPhoto = "assets/images/jhonsonPhoto.svg";

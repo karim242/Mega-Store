@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
