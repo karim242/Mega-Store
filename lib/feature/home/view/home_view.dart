@@ -81,7 +81,7 @@ class HomeView extends StatelessWidget {
                   color: AppColors.scondaryColor,
                 ),
               ),
-              const CusromGridView(),
+              const CustomGridView(),
             ]),
           ),
         ),

@@ -11,7 +11,7 @@ class OfferView extends StatelessWidget {
       appBar: customAppBar(context,title: 'Category  Name '),
       body:const Padding(
         padding:  EdgeInsets.symmetric(horizontal: 16.0),
-        child:  SingleChildScrollView(child: CusromGridView()),
+        child:  SingleChildScrollView(child: CustomGridView()),
       ),
     );
   }

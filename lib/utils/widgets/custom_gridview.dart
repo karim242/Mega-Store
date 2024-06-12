@@ -3,8 +3,8 @@ import 'package:technomasr_tasks/utils/app_image.dart';
 import 'package:technomasr_tasks/utils/widgets/custom_product_big_img.dart';
 import 'package:flutter_svg/svg.dart';
 
-class CusromGridView extends StatelessWidget {
-  const CusromGridView({super.key});
+class CustomGridView extends StatelessWidget {
+  const CustomGridView({super.key});
  final Map<String, bool> productImages =  const {
     Assets.imagesyouMayProductImg: false,
     Assets.imagesFsImage2: true,
@@ -14,7 +14,7 @@ class CusromGridView extends StatelessWidget {
    
   @override
   Widget build(BuildContext context) {
-    return  GridView.builder(
+    return GridView.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
