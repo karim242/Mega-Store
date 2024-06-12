@@ -1,6 +1,5 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
 
 class BannersImage extends StatelessWidget {
@@ -20,7 +19,7 @@ class BannersImage extends StatelessWidget {
                 height: 139,
                 width: 353,
                 child: Swiper(
-                 //autoplay: true,
+                 autoplay: true,
                   itemBuilder: (BuildContext context, int index) {
                     return Image.asset(
                       bannersImage[index],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technomasr_tasks/utils/app_colors.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
 class CustomBotton extends StatelessWidget {
@@ -14,7 +15,7 @@ class CustomBotton extends StatelessWidget {
       height: 57,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: backgroundColor ?? const Color(0xffED1C24),
+          backgroundColor: backgroundColor ?? AppColors.redColor,
           foregroundColor: Colors.white,
           elevation: 0,
           shape: const RoundedRectangleBorder(

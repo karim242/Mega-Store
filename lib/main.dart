@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:technomasr_tasks/feature/home/view/root_view.dart';
 import 'package:technomasr_tasks/feature/splash_view.dart';
 
 void main() {
@@ -12,11 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner : false,
-
+      debugShowCheckedModeBanner: false,
         theme: ThemeData(
           fontFamily: 'Poppins',
         ),
-        home: const RootView());
+        home: const SplashView());
   }
 }

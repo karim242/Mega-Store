@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
-import 'package:flutter_stepindicator/flutter_stepindicator.dart';
-
+import 'package:technomasr_tasks/feature/home/widgets/stepper_active_item.dart';
+import 'package:technomasr_tasks/feature/home/widgets/stepper_in_active_item.dart';
 class CustomStepper extends StatelessWidget {
   const CustomStepper({
     super.key,
@@ -9,43 +8,23 @@ class CustomStepper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FlutterStepIndicator(
-                    height: 26,
-                  positiveColor : Color(0xff087da9),
-                     negativeColor: Color(0xffFFFFFF),
-                   // borderRadius: const BorderRadius.all(Radius.circular(10.0)),
-                   paddingLine:EdgeInsets.all(1),
-                    onChange: (i){},
-                    page: 3,
-               
-                 list: const[
-                Step(title: Text('Packing'), 
-                content: CircleAvatar(
-                  radius: 10,
-                  backgroundColor: Color(0xff087da9),
-                  child: Icon(Icons.check,color: Colors.white,)
-                ),
-                ),
-                  Step(title: Text('Shipping'), 
-                content: CircleAvatar(
-                  radius: 12,
-                  backgroundColor: Color(0xff087da9),
-                  child: Icon(Icons.check,color: Colors.white,)
-                ),
-                ),  Step(title: Text('Arriving'), 
-                content: CircleAvatar(
-                  radius: 10,
-                  backgroundColor: Color(0xff087da9),
-                  child: Icon(Icons.check,color: Colors.white,)
-                ),
-                ),
-                  Step(title: Text('Success'), 
-                content: CircleAvatar(
-                  radius: 10,
-                  backgroundColor: Color(0xffFFFFFF),
-                  child: Icon(Icons.check,color: Colors.white,)
-                ),
-                )
-              ]);
+    return const Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        StepperActiveItem(
+          title: 'Packing',
+        ),
+        StepperActiveItem(
+          title: 'Shipping',
+        ),
+        StepperActiveItem(
+          title: 'Arriving',
+        ),
+        StepperInActiveItem(),
+      ],
+    );
   }
 }
+
+

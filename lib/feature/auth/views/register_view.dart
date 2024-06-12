@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technomasr_tasks/feature/home/view/root_view.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
 import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
 import 'package:technomasr_tasks/feature/auth/widgets/custom_mega.dart';
@@ -94,8 +95,14 @@ class _RegisterViewState extends State<RegisterView> {
                     const SizedBox(
                       height: 24,
                     ),
-                    const CustomBotton(
+                     CustomBotton(
                       title: 'Sign Up',
+                      onTap: (){
+                         Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const RootView()));
+                      },
                     ),
                     const SizedBox(
                       height: 20,

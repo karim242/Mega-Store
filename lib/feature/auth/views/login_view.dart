@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:technomasr_tasks/feature/home/view/root_view.dart';
+import 'package:technomasr_tasks/utils/app_colors.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
 import 'package:technomasr_tasks/feature/auth/views/forget_pasw_view.dart';
@@ -66,9 +67,19 @@ class _LoginViewState extends State<LoginView> {
                         const SizedBox(
                           height: 16,
                         ),
-                        const CustomBotton(
-                          title: 'Sign In',
-                        ),
+                        
+                           CustomBotton(
+                            title: 'Sign In',
+                            onTap: (){
+                             
+                                Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const RootView()),
+                              );
+                            },
+                          ),
+                       
                         const SizedBox(
                           height: 21,
                         ),
@@ -102,7 +113,7 @@ class _LoginViewState extends State<LoginView> {
                             child: Text(
                               "Forgot Password?",
                               style: AppFonts.textStyle12()
-                                  .copyWith(color: const Color(0xffFF000A)),
+                                  .copyWith(color: AppColors.redColor),
                             )),
                         const CustomRowDontHave(
                           title1: 'Don’t have a account? ',

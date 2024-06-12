@@ -56,9 +56,9 @@ final Widget? suffixIcon;
   OutlineInputBorder errorborderBuilder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(5),
-      borderSide: const BorderSide(
+      borderSide:  BorderSide(
         width: 1.5,
-        color: Color(0xffFF000A),
+        color: AppColors.redColor,
       ),
     );
   }

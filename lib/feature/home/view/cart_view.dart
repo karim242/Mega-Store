@@ -4,7 +4,6 @@ import 'package:technomasr_tasks/feature/home/widgets/appbar_without_arrow.dart'
 import 'package:technomasr_tasks/feature/home/widgets/copon_row.dart';
 import 'package:technomasr_tasks/feature/home/widgets/custom_cart_item.dart';
 import 'package:technomasr_tasks/feature/home/widgets/total_price_box.dart';
-import 'package:technomasr_tasks/utils/app_fonts.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
 import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
 
