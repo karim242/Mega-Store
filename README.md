@@ -1,4 +1,4 @@
-# technomasr_tasks
+# MEGA Store
 
 A new Flutter project.
 
