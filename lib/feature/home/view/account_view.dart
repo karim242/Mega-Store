@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/feature/home/models/account_model.dart';
+import 'package:technomasr_tasks/feature/home/view/address_view.dart';
 import 'package:technomasr_tasks/feature/home/view/delet_account_view.dart';
 import 'package:technomasr_tasks/feature/home/view/my_order_views.dart';
 import 'package:technomasr_tasks/feature/home/view/profile_view.dart';
@@ -46,7 +47,12 @@ class AccountView extends StatelessWidget {
                   
               CustomAccountListTile(
                   accounts: AccountModel(
-                      title: 'Address', icon: Assets.imagesgLocationIcon,ontap: (){}),
+                      title: 'Address', icon: Assets.imagesgLocationIcon,ontap: (){
+                        Navigator.push(context, 
+                        MaterialPageRoute(
+                            builder: (context) => const AddressView(),),);
+
+                      }),
                 
               ),
                CustomAccountListTile(

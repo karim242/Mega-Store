@@ -11,21 +11,26 @@ class MyOrderView extends StatelessWidget {
     return Scaffold(
       appBar: customAppBar(context,
           title: 'My Orderes', color: const Color(0xff223263)),
-      body:  SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
-            children: List.generate(2, (index) =>  Padding(
-              padding:const  EdgeInsets.symmetric(vertical: 16.0),
-              child:   GestureDetector(
-                onTap: (){
-                  Navigator.push(context, 
-                    MaterialPageRoute(
-                      builder: (context) => const OredrDetailesView()));
-                },
-                child: const MyOrderesItems()),
-            ))
-          ),
+              children: List.generate(
+                  2,
+                  (index) => Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16.0),
+                        child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const OredrDetailesView(),
+                                ),
+                              );
+                            },
+                            child: const MyOrderesItems()),
+                      ))),
         ),
       ),
     );

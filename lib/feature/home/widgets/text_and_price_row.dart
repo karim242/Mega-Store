@@ -24,13 +24,18 @@ class TextAndPriceRow extends StatelessWidget {
                 0xff9098B1,
               )),
         ),
-        Text(
-          totalPrice.price,
-          style: AppFonts.textStyle12().copyWith(
-              fontWeight:fontWeigh ?? FontWeight.w400,
-              color: textColor ?? const Color(
-                0xff223263,
-              )),
+        SizedBox(
+          //height: 44,
+          width: 176,
+          child: Text(
+            totalPrice.price,
+            textAlign: TextAlign.end,
+            style: AppFonts.textStyle12().copyWith(
+                fontWeight:fontWeigh ?? FontWeight.w400,
+                color: textColor ?? const Color(
+                  0xff223263,
+                )),
+          ),
         ),
       ],
     );

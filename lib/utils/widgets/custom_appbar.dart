@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technomasr_tasks/utils/app_colors.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
 PreferredSizeWidget customAppBar( BuildContext context,{required String title,Color? color}) {
@@ -27,7 +28,7 @@ PreferredSizeWidget customAppBar( BuildContext context,{required String title,Co
         title,
         textAlign: TextAlign.left,
         style: AppFonts.textStyle14()
-            .copyWith(fontSize: 16, color: color ??const Color(0xff50555C)),
+            .copyWith(fontSize: 16, color: color ??AppColors.scondaryColor),
       ),
     );
   

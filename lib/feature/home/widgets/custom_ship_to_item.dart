@@ -1,14 +1,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/feature/home/widgets/ship_to_btn_row.dart';
+import 'package:technomasr_tasks/utils/app_colors.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
 class CustomShipToItem extends StatelessWidget {
   const CustomShipToItem({
-    super.key, required this.name, this.borderColor,
+    super.key, required this.name, this.borderColor, this.onTap,
   });
 final String name;
 final Color? borderColor;
+final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,7 +27,7 @@ final Color? borderColor;
             Text(
               name,
               style: AppFonts.textStyle14().copyWith(
-                color: const Color(0xff223263),
+                color: AppColors.primaryColor
               ),
             ),
             const SizedBox(
@@ -37,7 +39,7 @@ final Color? borderColor;
               child: Text(
                 '3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States',
                 style: AppFonts.textStyle12().copyWith(
-                  color: const Color(0xff9098B1),
+                  color: AppColors.scondaryColor,
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -48,14 +50,14 @@ final Color? borderColor;
             Text(
               '+99 1234567890',
               style: AppFonts.textStyle12().copyWith(
-                color: const Color(0xff9098B1),
+                color: AppColors.scondaryColor,
                 fontWeight: FontWeight.w400,
               ),
             ),
             const SizedBox(
               height: 16,
             ),
-            const ShipToBottonRow()
+             ShipToBottonRow(onTap: onTap,)
           ],
         ),
       ),

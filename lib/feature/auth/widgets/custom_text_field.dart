@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:technomasr_tasks/utils/app_colors.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -23,14 +24,14 @@ final Widget? suffixIcon;
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle:AppFonts.textStyle12().copyWith(
-              color: const Color(0xff9098B1),
+              color:  AppColors.scondaryColor,
               fontWeight: FontWeight.w400,
               
             ),
             suffixIcon: suffixIcon,
           prefixIcon: SvgPicture.asset(
             imageIcon,
-            color: ontaped ?const Color(0xff9098B1 ):const   Color(0xff40BFFF) ,
+            color: ontaped ?AppColors.scondaryColor:const   Color(0xff40BFFF) ,
             fit: BoxFit.scaleDown,
             width: 24,
             height: 24,
