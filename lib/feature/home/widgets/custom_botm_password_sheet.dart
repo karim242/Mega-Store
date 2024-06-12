@@ -7,9 +7,17 @@ import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
 Future customshowBottomPasswordSheet(BuildContext context) {
   return showModalBottomSheet(
       useSafeArea: true,
+      isScrollControlled: true,
       context: context,
+       shape: RoundedRectangleBorder(
+     borderRadius:
+        BorderRadius.circular(0.0),),
       builder: (BuildContext context) {
-        return Container(
+        return GestureDetector(
+          onTap: () {
+            FocusScope.of(context).unfocus();
+          },
+          child:  Container(
           height: 469,
           width: double.infinity,
           margin: const EdgeInsets.symmetric(horizontal: 16),
@@ -27,7 +35,7 @@ Future customshowBottomPasswordSheet(BuildContext context) {
               const CustomBotmSheetTextField(
                 title: 'New Password Again',
               ),
-              const SizedBox(height: 40.0),
+              const SizedBox(height: 50.0),
               CustomBotton(
                 title: 'Save',
                 onTap: () {
@@ -37,7 +45,7 @@ Future customshowBottomPasswordSheet(BuildContext context) {
               ),
               const SizedBox(height: 12.0),
             ],
-          ),
+           ) ),
         );
       });
 }

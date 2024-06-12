@@ -34,7 +34,7 @@ final void Function()? ontap;
                 fit: BoxFit.fill,
               )),
           const SizedBox(
-            width: 17,
+            width: 10,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -44,15 +44,13 @@ final void Function()? ontap;
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: 155,
+                    width: 140,
                     height: 36,
                     child: Text('Nike Air Zoom Pegasus 36 Miamis',
                         style: AppFonts.textStyle12()
                             .copyWith(color: const Color(0xff223263))),
                   ),
-                  const SizedBox(
-                    width: 16,
-                  ),
+                  
                   InkWell(
                     onTap: ontap,
                     child: SvgPicture.asset(heartIconString, )),
@@ -73,7 +71,7 @@ final void Function()? ontap;
               Text('\$299,43',style: AppFonts.textStyle12().copyWith(
                 color: const Color(0xff40bfff)),),
                 const SizedBox(
-                    width: 70,
+                    width: 50,
               
                   ),
                   const CustomIncreaseAndDecreaseRow()

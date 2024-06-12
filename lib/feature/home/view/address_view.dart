@@ -12,8 +12,9 @@ class AddressView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar(context,title: 'Address',color: AppColors.primaryColor),
-      body:  SingleChildScrollView(
+      appBar: customAppBar(context,
+          title: 'Address', color: AppColors.primaryColor),
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
@@ -21,32 +22,44 @@ class AddressView extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
-               CustomShipToItem(
-                name: 'Priscekila',borderColor: const Color(0xff40BFFF),
-                onTap: (){
-                  Navigator.push(context, 
-                  MaterialPageRoute(builder: (context) =>  const DeleteAddressView()));
+              CustomShipToItem(
+                name: 'Priscekila',
+                borderColor: const Color(0xff40BFFF),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const DeleteAddressView()));
                 },
-                ),
+              ),
               const SizedBox(
                 height: 16,
               ),
-               CustomShipToItem(name: 'Ahmad Khaidir',
-                  onTap: (){
-                  Navigator.push(context, 
-                  MaterialPageRoute(builder: (context) =>  const DeleteAddressView()));
+              CustomShipToItem(
+                name: 'Ahmad Khaidir',
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const DeleteAddressView()));
                 },
               ),
-                const SizedBox(
+              const SizedBox(
                 height: 70,
               ),
-               CustomBotton(
+              CustomBotton(
                 title: 'Add Address',
-                onTap: (){
-                  Navigator.push(context, 
-                  MaterialPageRoute(builder: (context) => const AddAddressView()));
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const AddAddressView()));
                 },
-                backgroundColor: AppColors.brownColor,)
+                backgroundColor: AppColors.brownColor,
+              ),
+              const SizedBox(
+                height: 12,
+              ),
             ],
           ),
         ),

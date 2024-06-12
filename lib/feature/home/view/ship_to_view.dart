@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/feature/home/view/success_view.dart';
 import 'package:technomasr_tasks/feature/home/widgets/custom_ship_to_item.dart';
+import 'package:technomasr_tasks/utils/app_colors.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
 
@@ -28,7 +29,7 @@ class ShipToView extends StatelessWidget {
           'Ship To',
           textAlign: TextAlign.left,
           style: AppFonts.textStyle14()
-              .copyWith(fontSize: 16, color: const Color(0xff223263)),
+              .copyWith(fontSize: 16, color: AppColors.primaryColor),
         ),
         actions: const [
           Padding(
@@ -59,7 +60,10 @@ class ShipToView extends StatelessWidget {
                  Navigator.push(context, 
                  MaterialPageRoute(builder: (context) => const SuccessView()));
                 },
-                backgroundColor:const Color( 0xffBA6400),)
+                backgroundColor:AppColors.brownColor,),
+                 const SizedBox(
+                height: 16,
+              ),
             ],
           ),
         ),

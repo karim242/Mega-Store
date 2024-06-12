@@ -5,6 +5,7 @@ import 'package:technomasr_tasks/feature/home/widgets/custom_botm_password_sheet
 import 'package:technomasr_tasks/feature/home/widgets/custom_bottom_sheet.dart';
 import 'package:technomasr_tasks/feature/home/widgets/custom_name_bottom_sheet.dart';
 import 'package:technomasr_tasks/feature/home/widgets/profile_custom_row.dart';
+import 'package:technomasr_tasks/utils/app_colors.dart';
 import 'package:technomasr_tasks/utils/app_image.dart';
 import 'package:technomasr_tasks/utils/widgets/custom_appbar.dart';
 import 'package:technomasr_tasks/utils/widgets/custom_profile_listtile.dart';
@@ -15,7 +16,7 @@ class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: customAppBar(context,title: 'Profile', color: const Color(0xff223263)),
+        appBar: customAppBar(context,title: 'Profile', color: AppColors.primaryColor),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),

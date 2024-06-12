@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:technomasr_tasks/utils/app_colors.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
@@ -26,7 +27,7 @@ class StepperActiveItem extends StatelessWidget {
                 )),
             Container(
               height: 1,
-              width: 70,
+              width: 55,
               color: AppColors.positiveColor,
             )
           ],

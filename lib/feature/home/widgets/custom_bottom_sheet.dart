@@ -12,9 +12,17 @@ Future customshowBottomSheet(
 }) {
   return showModalBottomSheet(
     useSafeArea: true,
+    isScrollControlled: true,
     context: context,
+     shape: RoundedRectangleBorder(
+     borderRadius:
+        BorderRadius.circular(0.0),),
     builder: (BuildContext context) {
-      return Container(
+      return GestureDetector(
+          onTap: () {
+            FocusScope.of(context).unfocus();
+          },
+          child: Container(
         height: 325,
         width: double.infinity,
         margin: const EdgeInsets.symmetric(horizontal: 16),
@@ -57,7 +65,7 @@ Future customshowBottomSheet(
                          const SizedBox(height: 12.0),
 
           ],
-        ),
+           ) ),
       );
     },
   );

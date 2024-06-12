@@ -28,7 +28,7 @@ class _TextAndHeartRowState extends State<TextAndHeartRow> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: 300,
+            width: 290,
             height: 60,
             child: Text('Product Name will dispaly here ',
             style: AppFonts.textStyle14().copyWith(
@@ -36,7 +36,7 @@ class _TextAndHeartRowState extends State<TextAndHeartRow> {
               fontSize: 20
             ),),
           ),
-          const SizedBox(width: 19,),
+          const SizedBox(width: 10,),
                 SvgPicture.asset(
                 Assets.imagesheartIcon,
                 width: 24,

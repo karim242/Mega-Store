@@ -26,8 +26,8 @@ class CustomGridView extends StatelessWidget {
     ), 
     itemCount: productImages.length,
     itemBuilder: (BuildContext context, int index) { 
-      return  Expanded(
-      
+      return  SizedBox(
+      height: 232,
         child:   Stack(
           alignment: const Alignment(-0.9, -0.8),
           children: [CustomProductBigImage(

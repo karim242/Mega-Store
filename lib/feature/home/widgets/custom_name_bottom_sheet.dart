@@ -6,34 +6,46 @@ import 'package:technomasr_tasks/utils/widgets/custom_botton.dart';
 
 Future customshowBottomNameSheet(BuildContext context) {
   return showModalBottomSheet(
-      useSafeArea: true,
+    //  useSafeArea: true,
+
+      isScrollControlled: true,
+    
       context: context,
+    
+    shape: RoundedRectangleBorder(
+     borderRadius:
+        BorderRadius.circular(0.0),),
       builder: (BuildContext context) {
-        return Container(
-          height: 361,
-          width: double.infinity,
-          margin: const EdgeInsets.symmetric(horizontal: 16),
-          child: Column(
-            children: [
-              const SizedBox(height: 29.0),
-              const CustomNameBotmSheetTextField(
-                title: 'First Name',
-              ),
-              const SizedBox(height: 24.0),
-              const CustomNameBotmSheetTextField(
-                title: 'Last Name',
-              ),
-              const SizedBox(height: 40.0),
-              CustomBotton(
-                title: 'Save',
-                onTap: () {
-                  Navigator.pop(context);
-                },
-                backgroundColor: const Color(0xffBA6400),
-              ),
-              const SizedBox(height: 12.0),
-            ],
-          ),
+        return GestureDetector(
+          onTap: () {
+          //  FocusScope.of(context).unfocus();
+          },
+          child: Container(
+             // height: 361,
+              height: MediaQuery.of(context).size.height * 0.5,
+              width: double.infinity,
+              margin: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                children: [
+                  const SizedBox(height: 29.0),
+                  const CustomNameBotmSheetTextField(
+                    title: 'First Name',
+                  ),
+                  const SizedBox(height: 24.0),
+                  const CustomNameBotmSheetTextField(
+                    title: 'Last Name',
+                  ),
+                  const SizedBox(height: 40.0),
+                  CustomBotton(
+                    title: 'Save',
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    backgroundColor: const Color(0xffBA6400),
+                  ),
+                  const SizedBox(height: 12.0),
+                ],
+              )),
         );
       });
 }

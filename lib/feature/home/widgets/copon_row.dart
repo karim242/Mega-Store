@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:technomasr_tasks/utils/app_colors.dart';
 import 'package:technomasr_tasks/utils/app_fonts.dart';
 
 class CuponRoW extends StatelessWidget {
@@ -55,7 +56,7 @@ class CuponTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.sizeOf(context).width/1.48,
+      width: MediaQuery.sizeOf(context).width/1.55,
       height: 56,
       child: TextField(
         decoration: InputDecoration(
@@ -85,9 +86,9 @@ class CuponTextField extends StatelessWidget {
   OutlineInputBorder errorborderBuilder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(5),
-      borderSide: const BorderSide(
+      borderSide:  BorderSide(
         width: 1.5,
-        color: Color(0xffFF000A),
+        color: AppColors.redColor,
       ),
     );
   }

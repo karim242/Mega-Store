@@ -29,8 +29,10 @@ final RowModel rowModel;
             style:
                 AppFonts.textStyle12().copyWith(color: const Color(0xff223263)),
           ),
-          const SizedBox(
-            width: 88,
+         const Flexible(
+            child:  SizedBox(
+              width: 88,
+            ),
           ),
           Text(rowModel.subtitle,
             style: AppFonts.textStyle12().copyWith(

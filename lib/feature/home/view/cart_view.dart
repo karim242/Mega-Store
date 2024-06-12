@@ -70,7 +70,10 @@ class _CartViewState extends State<CartView> {
                   Navigator.push(context, 
                   MaterialPageRoute(builder: (context) => const ShipToView()));
                 },
-                backgroundColor:const Color( 0xffBA6400),)
+                backgroundColor:const Color( 0xffBA6400),),
+                 const SizedBox(
+                height: 16,
+              ),
             ],
           ),
         ),

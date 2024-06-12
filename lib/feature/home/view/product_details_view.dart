@@ -16,13 +16,12 @@ class ProductDetails extends StatelessWidget {
   const ProductDetails({
     super.key,
   });
- final ProfileModel profileModel = const ProfileModel(
-      image: Assets.imagesProfilePicture,
-      title: "James Lawson",
-    );
+  final ProfileModel profileModel = const ProfileModel(
+    image: Assets.imagesProfilePicture,
+    title: "James Lawson",
+  );
   @override
   Widget build(BuildContext context) {
-   
     return Scaffold(
       appBar: customAppBar(context, title: 'Product Name ....'),
       body: Padding(
@@ -39,6 +38,7 @@ class ProductDetails extends StatelessWidget {
                   )),
               const SizedBox(height: 21),
               const RowDot(),
+              const SizedBox(height: 8),
               const TextAndHeartRow(),
               const SizedBox(height: 8),
               const StarRow(
