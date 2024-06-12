@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:technomasr_tasks/feature/home/models/account_model.dart';
 import 'package:technomasr_tasks/feature/home/view/delet_account_view.dart';
+import 'package:technomasr_tasks/feature/home/view/my_order_views.dart';
 import 'package:technomasr_tasks/feature/home/view/profile_view.dart';
 import 'package:technomasr_tasks/feature/home/widgets/appbar_without_arrow.dart';
 import 'package:technomasr_tasks/feature/home/widgets/custom_account_list_title.dart';
@@ -35,7 +36,11 @@ class AccountView extends StatelessWidget {
                 CustomAccountListTile(
                     accounts: AccountModel(
                         title: 'My Orders ',
-                         icon: Assets.imagesgmyOrderIcon,ontap: (){}
+                         icon: Assets.imagesgmyOrderIcon,ontap: (){
+                          Navigator.push(context, 
+                          MaterialPageRoute(
+                              builder: (context) => const MyOrderView(),),);
+                         }
                          ),
                 ),
                   

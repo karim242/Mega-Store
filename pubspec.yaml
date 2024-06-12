@@ -35,6 +35,7 @@ dependencies:
   flutter_svg: ^2.0.10+1
   svg_flutter: ^0.0.1
   dotted_line: ^3.2.2
+  flutter_stepindicator: ^0.1.7
 
 dev_dependencies:
   flutter_lints: ^3.0.0

@@ -53,7 +53,9 @@ class DeletAccountView extends StatelessWidget {
                 height: 16,
               ),
               CancelCustomBotton(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
                 foregroundColor: const Color(0xff9098B1),
               )
             ],

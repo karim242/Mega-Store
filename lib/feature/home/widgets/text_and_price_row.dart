@@ -6,9 +6,11 @@ import 'package:technomasr_tasks/utils/app_fonts.dart';
 class TextAndPriceRow extends StatelessWidget {
   const TextAndPriceRow({
     super.key,
-    required this.totalPrice,
+    required this.totalPrice, this.textColor, this.fontWeigh,
   });
   final TotalPriceModel totalPrice;
+  final Color? textColor;
+ final FontWeight? fontWeigh;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -25,8 +27,8 @@ class TextAndPriceRow extends StatelessWidget {
         Text(
           totalPrice.price,
           style: AppFonts.textStyle12().copyWith(
-              fontWeight: FontWeight.w400,
-              color: const Color(
+              fontWeight:fontWeigh ?? FontWeight.w400,
+              color: textColor ?? const Color(
                 0xff223263,
               )),
         ),
