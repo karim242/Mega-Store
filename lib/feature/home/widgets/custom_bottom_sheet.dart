@@ -18,10 +18,10 @@ Future customshowBottomSheet(
      borderRadius:
         BorderRadius.circular(0.0),),
     builder: (BuildContext context) {
-      return GestureDetector(
-          onTap: () {
-            FocusScope.of(context).unfocus();
-          },
+      return Padding(
+          padding:  EdgeInsets.only(
+            bottom: MediaQuery.of(context).viewInsets.bottom==0? 0:
+            MediaQuery.of(context).viewInsets.bottom),
           child: Container(
         height: 325,
         width: double.infinity,

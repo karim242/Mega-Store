@@ -23,7 +23,8 @@ class FavouritBody extends StatelessWidget {
           childAspectRatio: 155 / 246),
       itemCount: productImages.length,
       itemBuilder: (BuildContext context, int index) {
-        return Expanded(
+        return SizedBox(
+            height: 247,
             child: Stack(
           alignment: const Alignment(-0.9, -0.8),
           children: [
